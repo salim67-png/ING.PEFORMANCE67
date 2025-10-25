@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ING PERFORMANCE</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #006400; /* vert foncé */
+            padding: 10px 20px;
+            color: white;
+        }
+
+        header img.logo {
+            height: 60px;
+        }
+
+        header img.flag {
+            height: 40px;
+        }
+
+        nav {
+            background-color: #004d00;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        h1, h2 {
+            color: #004d00;
+        }
+
+        .services img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .service {
+            background-color: white;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #004d00;
+            color: white;
+        }
+
+        form input, form select, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 15px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        form button {
+            background-color: #006400;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background-color: #004d00;
+        }
+
+        .header-left {
+            display: flex;
+            align-items: center;
+        }
+
+        .header-left img.logo {
+            margin-left: 20px; /* décale le logo pour ne pas gêner le drapeau */
+        }
+@media (max-width: 900px) { 
+img { 
+   max-width: 100%;
+   height: auto;
+}
+
+.table-container {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td, th {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+}	
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <img src="drapeau-ingushetie.png" alt="Drapeau Ingouchie" class="flag">
+            <img src="logo.png" alt="Logo" class="logo">
+        </div>
+        <div>
+            <strong>Votre propreté, notre priorité</strong>
+        </div>
+    </header>
+
+    <nav>
+        <a href="#services">Services</a>
+        <a href="#tarifs">Tarifs</a>
+        <a href="#contact">Réservation</a>
+    </nav>
+
+    <section id="services">
+        <h1>Nos Services</h1>
+
+        <div class="service">
+            <h2>Nettoyage intérieur</h2>
+            <img src="nettoyage1.jpg" alt="Nettoyage intérieur">
+            <p>Nous aspirons vos moquettes, sièges, entretenons cuir et plastiques. Possibilité d'utiliser l'injecteur-extracteur pour les odeurs ou taches (supplément). La vapeur élimine bactéries et allergènes.</p>
+            <p>Nous nous déplaçons uniquement sur Strasbourg et alentours pour un minimum de 10€.</p>
+        </div>
+
+        <div class="service">
+            <h2>Polissage phares</h2>
+            <img src="polissage1.jpg" alt="Polissage phares">
+            <p>Nous utilisons des outils et produits professionnels pour redonner à vos phares un aspect neuf et durable.</p>
+        </div>
+    </section>
+
+    <section id="tarifs">
+        <h1>Nos Tarifs</h1>
+        <ul>
+            <li>Nettoyage intérieur : à partir de 60€ selon l'état</li>
+            <li>Polissage phares : à partir de 40€ selon l'état</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h1>Réservation</h1>
+        <form action="https://formspree.io/f/xgvpwpqq" method="POST">
+            <label>Nom</label>
+            <input type="text" name="name" required>
+
+            <label>Email</label>
+            <input type="email" name="_replyto" required>
+
+            <label>Téléphone</label>
+            <input type="tel" name="phone" required>
+
+            <label>Date et Heure</label>
+            <input type="datetime-local" name="datetime" required>
+
+            <label>Service</label>
+            <select name="service">
+                <option value="nettoyage">Nettoyage intérieur</option>
+                <option value="polissage">Polissage phares</option>
+            </select>
+
+            <label>Message</label>
+            <textarea name="message" rows="4" placeholder="Détails ou demande spéciale"></textarea>
+
+            <button type="submit">Réserver</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>Contact : 07 67 58 93 44 | <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="7003111c191d424040481230171d11191c5e131f1d">[email&#160;protected]</a> | Strasbourg et alentours</p>
+        <p>Deux frères motivés à ouvrir notre garage, votre satisfaction est notre priorité.</p>
+    </footer>
+<p style="bottom: 10px; right: 10px; position: absolute;"><a href="https://wordtohtml.net/?utm_source=wth_free_doc_conversion_link&utm_medium=external" target="_blank" style="font-size:11px; color: #d0d0d0">Converti en HTML avec WordToHTML.net</a><span style="font-size:11px; color: #d0d0d0"> | </span><a href="https://documentconverter.pro/?utm_source=wth_free_doc_conversion_link&utm_medium=external" target="_blank" style="font-size:11px; color: #d0d0d0">Convertisseur de documents pour Windows</a></p>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"version":"2024.11.0","token":"4581d6a58cf94e929fad52deda295622","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+</html>
+
