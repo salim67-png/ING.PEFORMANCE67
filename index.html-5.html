@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ING PERFORMANCE</title>
+<style>
+* {margin:0; padding:0; box-sizing:border-box;}
+body {font-family: 'Arial', sans-serif; background: #f5f5f5; color: #1a1a1a;}
+header {
+  background: linear-gradient(90deg, #00c853, #0b3d91);
+  color: white;
+  text-align: center;
+  padding: 25px 20px;
+}
+header h1 {font-size: 36px; margin-bottom: 10px;}
+header p.slogan {font-size: 18px; font-style: italic;}
+main { max-width: 1000px; margin: auto; padding: 30px 20px; }
+section { margin-bottom: 50px; }
+h2 { font-size: 28px; color: #0b3d91; border-bottom: 3px solid #00c853; display: inline-block; padding-bottom: 5px; margin-bottom: 20px; }
+.images-section { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
+.images-section div {
+  width: 300px; height: 200px; 
+  background: linear-gradient(135deg, #d9d9d9, #b3b3b3);
+  border-radius: 15px; 
+  display: flex; align-items: center; justify-content: center; 
+  color: #555; font-size: 18px; font-weight: bold; 
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.images-section div:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+.tarifs { background: #e0f7fa; padding: 20px; border-radius: 15px; font-size: 18px; }
+.tarifs li { margin-bottom: 10px; }
+form { display: flex; flex-direction: column; gap: 15px; background: #e8f5e9; padding: 25px; border-radius: 15px; }
+input, textarea, select, button { padding: 12px; border-radius: 8px; border: 1px solid #ccc; font-size: 16px; }
+button { background: #00c853; color: white; border: none; cursor: pointer; transition: background 0.3s; }
+button:hover { background: #009624; }
+footer { background: #0b3d91; color: white; text-align: center; padding: 20px; font-size: 16px; }
+a { color: #00c853; text-decoration: none; }
+.about-section, .services-section { background: #fff3e0; padding: 20px; border-radius: 15px; font-size: 18px; }
+ul.details { margin-top: 10px; margin-left: 20px; }
+ul.details li { margin-bottom: 8px; }
+</style>
+</head>
+<body>
+
+<header>
+<h1>ING PERFORMANCE</h1>
+<p class="slogan">Votre propreté, notre priorité</p>
+</header>
+
+<main>
+<section class="images-section">
+<div>Nettoyage intérieur</div>
+<div>Polissage phares</div>
+</section>
+
+<section class="about-section">
+<h2>À propos de nous</h2>
+<p>Nous sommes deux frères passionnés et motivés à ouvrir notre garage à Strasbourg. Chez ING PERFORMANCE, votre satisfaction et la propreté de votre véhicule sont notre priorité. Nous utilisons des méthodes professionnelles pour redonner éclat et hygiène à votre voiture.</p>
+</section>
+
+<section class="services-section">
+<h2>Nos Services</h2>
+<h3>Nettoyage intérieur</h3>
+<p>Nous nous déplaçons uniquement à Strasbourg et alentours, avec un minimum de 10€ pour le déplacement.</p>
+<ul class="details">
+<li>Aspiration complète des moquettes, sièges et coffre</li>
+<li>Entretien du cuir et des plastiques</li>
+<li>Utilisation de l’injecteur-extracteur pour éliminer les odeurs et taches (supplément possible)</li>
+<li>Nettoyage à la vapeur pour éliminer bactéries et saletés incrustées</li>
+</ul>
+
+<h3>Polissage des phares</h3>
+<ul class="details">
+<li>Utilisation d’outils professionnels et produits de qualité</li>
+<li>Rend vos phares comme neufs</li>
+<li>Effet durable dans le temps</li>
+</ul>
+</section>
+
+<section>
+<h2>Contact</h2>
+<p>📞 07 67 58 93 44</p>
+<p>✉️ <a href="mailto:salim2008b@gmail.com">salim2008b@gmail.com</a></p>
+<p>📍 Strasbourg et alentours</p>
+</section>
+
+<section class="tarifs">
+<h2>Tarifs</h2>
+<ul>
+<li>Nettoyage intérieur : à partir de 60€ selon l'état et options</li>
+<li>Polissage phares : à partir de 40€ selon l'état</li>
+<li>Déplacement : minimum 10€ à Strasbourg et alentours</li>
+</ul>
+</section>
+
+<section>
+<h2>Réserver un rendez-vous</h2>
+<form action="https://formspree.io/f/xgvpwpqq" method="POST">
+<input type="text" name="nom" placeholder="Votre nom" required>
+<input type="email" name="email" placeholder="Votre e-mail" required>
+<input type="tel" name="telephone" placeholder="Votre téléphone" required>
+<select name="service" required>
+<option value="">Choisir un service</option>
+<option value="Nettoyage intérieur">Nettoyage intérieur</option>
+<option value="Polissage phares">Polissage phares</option>
+<option value="Les deux">Les deux</option>
+</select>
+<input type="date" name="date" required>
+<input type="time" name="heure" required>
+<textarea name="message" placeholder="Message ou précisions"></textarea>
+<button type="submit">Envoyer ma demande</button>
+</form>
+</section>
+
+</main>
+
+<footer>
+&copy; 2025 ING PERFORMANCE - Tous droits réservés
+</footer>
+
+</body>
+</html>
